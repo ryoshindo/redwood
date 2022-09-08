@@ -23,6 +23,10 @@ constructs:
   web:
     type: static-website
     path: dist
+    extensions:
+      bucket:
+        Properties:
+          AccessControl: Private
 
 provider:
   name: aws
